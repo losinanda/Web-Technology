@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>External Style</title>
+    <link rel="stylesheet" type="text/css" href="assets/style1.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="assets/logoundiksha.png" width="100">
+            </div>
+            <nav class="nav">
+                <div class="nav-center">
+                    <h1>
+                        Selamat Datang
+                    </h1>
+                    <h4>
+                        Sistem Informasi Pendataan Karyawan
+                    </h4>
+                    <ul>
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#logout">Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <aside class="sidebar">
+                <div style="padding: 15px;">
+                    <b>Menu</b><br>
+                    <hr>
+                    <a href="#">Home</a><br />
+                    <a href="#">Biodata</a><br />
+                    <a href="#">Update Biodata</a><br />
+                    <a href="#">Contact</a><br />
+                </div>
+            </aside>
+            <main class="content">
+                <div style="padding: 6px;">
+                    <h2 style="margin: 0px;">Update Biodata Karyawan</h2>
+                    <hr />
+                    <form action="formulir.php" method="post" onSubmit="return ValidasiForm()" name="FormReg">
+                        <table>
+                            <tr>
+                                <td>Nama</td>
+                                <td>:</td>
+                                <td><input type="text" name="nama" value="" placeholder="Tulisakan Nama Anda" /><br />
+                                    <small style="color: red" id="err_nama"></small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td>:</td>
+                                <td> <input type="password" name="password"
+                                        placeholder="Tulisakan Password Anda" /><br />
+                                    <small style="color: red" id="err_password"></small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jenis Kelamin</td>
+                                <td>:</td>
+                                <!--Gunakan atribut checked untuk memilih radio-->
+                                <td><input type="radio" name="jenis_kelamin" value="lakilaki" checked /> Laki - Laki
+                                    <input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan
+                                    <br />
+                                    <small style="color: red" id="err_jenis_kelamin"></small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hobi</td>
+                                <td>:</td>
+                                <td><input type="checkbox" name="hobi" value="Membaca" /> Membaca Buku
+                                    <!--Gunakan atribut checked untuk memilih checkbox-->
+                                    <input type="checkbox" name="hobi" value="Menulis" checked /> Menulis
+                                    <input type="checkbox" name="hobi" value="Memancing" /> Memancing
+                                    <br />
+                                    <small style="color: red" id="err_hobi"></small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Asal Kota</td>
+                                <td>:</td>
+                                <td> <select name="asal_kota">
+                                        <option value="Kota Jakarta"> Jakarta</option>
+                                        <option>Bandung</option>
+                                        <!--Gunakan atribut selected untuk memilih option-->
+                                        <option value="Kota Semarang" selected>Semarang</option>
+                                    </select><br />
+                                    <small style="color: red" id="err_asal_kota"></small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Komentar</td>
+                                <td>:</td>
+                                <td><textarea name="komentar" rows="5" cols="20"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" align="right"><button> Simpan</button> </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </main>
+        </div>
+        <div class="kontak">
+            <div class="kontak2">
+                <h4>Kontak Kami</h4>
+                <p>Jalan Udayana No.11 Singaraja - Bali 81116 </p>
+                <p>(0362) 22570 </p>
+                <p>Email : humas@undiksha.ac.id </p>
+                <p>www.undiksha.ac.id </p>
+            </div>
+        </div>
+        <footer class="footer">
+            <font color="white">Copyright &#169; Undiksha </white>
+        </footer>
+    </div>
+</body>
+
+</html>

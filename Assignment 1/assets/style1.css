@@ -1,0 +1,125 @@
+* {
+
+    margin: 0;
+}
+
+body {
+    background-color: azure;
+}
+
+.container {
+    width: 1024px;
+    margin: auto;
+}
+
+.header {
+    background-color: #AED6F1;
+    height: 100px;
+    width: 100%;
+}
+
+.header .logo {
+    float: left;
+    width: 12%;
+}
+
+.header .logo img {
+    margin: 5px 5px 5px 15px;
+    width: 90px;
+    padding: 1px;
+}
+
+.header .nav {
+    width: 85%;
+    float: left;
+}
+
+.header .nav h1,
+h4 {
+    margin: 5px;
+    font-family: sans-serif
+}
+
+.header .nav ul {
+    float: right;
+    margin-right: 15px;
+}
+
+/*untuk list tanpa bullet*/
+.header .nav ul li {
+    float: left;
+    font-size: 16px;
+    margin-left: 15px;
+    display: block;
+}
+
+.header .nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.header .nav ul li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.header .nav ul li a:active {
+    color: yellow;
+}
+
+.nav-center {
+    transform: translate(1px, 33%);
+}
+
+.wrapper {
+    background-color: #DCDCDC;
+    float: left;
+    width: 100%
+}
+
+.sidebar {
+    width: 30%;
+    clear: both;
+    float: left;
+}
+
+.wrapper .sidebar a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.wrapper .sidebar a:active {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.content {
+    background-color: #EEEEEE;
+    width: 70%;
+    float: right;
+}
+
+.kontak {
+    padding: 10px;
+    text-align: left;
+    clear: both;
+    height: 100px;
+}
+
+.kontak2 {
+    width: 30%;
+    height: 100px;
+    margin: 0 71%;
+}
+
+.kontak p,
+h4 {
+    margin: 2px;
+}
+
+.footer {
+    background-color: rgb(2, 2, 39);
+    clear: both;
+    text-align: center;
+    padding: 15px;
+}
